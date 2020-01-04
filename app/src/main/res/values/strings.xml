@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Alarm Alert</string>
+
+    <string name="preferences_alarm_category">Alarm</string>
+    <string name="preferences_alarm_enabled_title">Enable Service</string>
+    <string name="preferences_alarm_enabled_summary">Activate App</string>
+    <string name="preferences_alarm_activation_sms_title">SMS Code</string>
+    <string name="preferences_alarm_activation_sms_summary">Provide the sms activation code.Note this is case sensitive</string>
+    <string name="preferences_alarm_vibrate_title">Vibrate</string>
+    <string name="preferences_alarm_lock">Lock this app to keep privacy</string>
+    <string name="preferences_alarm_vibrate_summary">If vibration needed.</string>
+    <string name="preferences_alarm_duration_title">Duration</string>
+    <string name="preferences_alarm_duration_summary">Set alarm time duration</string>
+    <string name="preferences_alarm_test_button">Test Alarm</string>
+    <string name="working_rev">SMS Alarm Alert can be used to enable alarm alert when receiving a sms containing particular message code.This
+            will work even in silent mode.</string>
+
+    <string-array name="preferences_alarm_duration_entries">
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>2m</item>
+    </string-array>
+    <string-array name="preferences_alarm_duration_values" translatable="false">
+        <item>5s</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+</resources>

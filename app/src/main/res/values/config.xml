@@ -1,0 +1,8 @@
+<resources>
+    <bool name="config_default_alarm_enabled">true</bool>
+    <string name="alarm_activation_sms">Trigger alarm</string>
+    <string name="alarm_vibrate">true</string>
+    <string name="alarm_lock">false</string>
+    <string name="alarm_duration">15</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+        <CheckBoxPreference android:key="alarm_enabled"
+                android:title="@string/preferences_alarm_enabled_title"
+                android:summary="@string/preferences_alarm_enabled_summary"
+                android:defaultValue="@bool/config_default_alarm_enabled"/>
+        <CheckBoxPreference android:key="alarm_vibrate"
+            android:title="@string/preferences_alarm_vibrate_title"
+            android:summary="@string/preferences_alarm_vibrate_summary"
+            android:defaultValue="@string/alarm_vibrate"
+            android:dependency="alarm_enabled" />
+        <EditTextPreference android:key="alarm_activation_sms"
+                android:title="@string/preferences_alarm_activation_sms_title"
+                android:summary="@string/preferences_alarm_activation_sms_summary"
+                android:maxLength="160"
+                android:defaultValue="@string/alarm_activation_sms"
+                android:dependency="alarm_enabled" />
+
+        <ListPreference android:key="alarm_duration"
+                android:title="@string/preferences_alarm_duration_title"
+
+                android:summary="@string/preferences_alarm_duration_summary"
+                android:entries="@array/preferences_alarm_duration_entries"
+                android:entryValues="@array/preferences_alarm_duration_values"
+                android:defaultValue="@string/alarm_duration"
+                android:dependency="alarm_enabled" />
+<PreferenceCategory android:title="Settings">
+        <Preference android:title="Test Alarm"
+            android:key="test"
+            android:summary="Click here to test"/>
+
+        <Preference android:title=""
+            android:key="working"
+            android:summary="@string/working_rev"/>
+
+    <Preference android:title="Rate Us"
+        android:key="rate"
+        android:summary="If you think you get what you need,please support us!!"/>
+    <Preference android:title="More Apps"
+        android:key="more"
+        android:summary="Try our products"/>
+</PreferenceCategory>
+
+</PreferenceScreen>
